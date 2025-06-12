@@ -40,7 +40,7 @@ The EU's prior work with this dataset has been limited to descriptive statistics
 
 2. Download the dataset from the [EU Open Data Portal](https://data.europa.eu/data/datasets/s3222_101_4_sp554_eng?locale=en) and place it in the project directory as specified in the analysis notebooks/scripts.
 
-3. Run the analysis scripts or Jupyter notebooks provided.
+3. Run the analysis scripts
 
 ## Requirements
 
@@ -49,7 +49,6 @@ The EU's prior work with this dataset has been limited to descriptive statistics
 - numpy
 - statsmodels
 - matplotlib / seaborn (for visualization)
-- jupyter (optional, for interactive analysis)
 
 Install requirements using:
 ```bash
