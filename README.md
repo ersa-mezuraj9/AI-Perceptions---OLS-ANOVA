@@ -1,3 +1,4 @@
+> **Note**: This project is still a work in progress. Analysis and documentation are actively being developed.
 # AI Perceptions — OLS & ANOVA
 
 This repository contains an analytical exploration of public perceptions about Artificial Intelligence (AI) using the **AI questions dataset** from the [European Union Open Data Portal](https://data.europa.eu/data/datasets/s3222_101_4_sp554_eng?locale=en). The dataset consists of survey responses collected by the EU, focusing on attitudes, awareness, and opinions regarding AI.
