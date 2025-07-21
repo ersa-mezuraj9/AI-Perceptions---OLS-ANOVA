@@ -19,15 +19,15 @@ import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from statsmodels.stats.diagnostic import het_breuschpagan
+from statsmodels.stats.diagnostic import linear_reset
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
 os.makedirs("education/plots", exist_ok=True)
 
-df = pd.read_excel("C:/Users/User/OneDrive/Desktop/Project AI/data/education_data.xlsx")
+df = pd.read_excel("C:/Users/User/OneDrive/Desktop/AI Project/AI-Perceptions---OLS-ANOVA/data/education_data.xlsx")
 data = df.describe()
-data.to_excel("data/describe_table.xlsx", index=False)
 
 
 edu_cols = ["Bachelor or equivalent", "Master or equivalent", "Doctoral or equivalent"]
@@ -108,6 +108,16 @@ for dep in dep_vars:
             continue
     else:
         print("Residuals are normally distributed.")
+    
+    # Linearity Test
+    reset_result = linear_reset(model, power=2, use_f=True)
+    print(f"Ramsey RESET p-value: {reset_result.pvalue:.4f}")
+
+    if reset_result.pvalue < 0.05:
+        print("Nonlinearity detected. Skipping ANOVA.")
+        continue
+    else:
+        print("No evidence of nonlinearity.")
 
     # Breusch-Pagan test for heteroskedasticity
     exog = model.model.exog
@@ -117,7 +127,8 @@ for dep in dep_vars:
         print("Heteroskedasticity detected. Skipping ANOVA.")
         continue
 
-    print("Both assumptions passed. Proceeding with ANOVA.")
+    print("All assumptions passed. Proceeding with ANOVA.")
+
 
     # ANOVA 
     anova_table = sm.stats.anova_lm(model, typ=2)
