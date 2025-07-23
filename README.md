@@ -1,7 +1,7 @@
 > **Note**: This project is still a work in progress. Analysis and documentation are actively being developed.
 # AI Perceptions — OLS & ANOVA
 
-This repository contains an analytical exploration of public perceptions about Artificial Intelligence (AI) using the **AI questions dataset** from the [European Union Open Data Portal](https://data.europa.eu/data/datasets/s3222_101_4_sp554_eng?locale=en). The dataset consists of survey responses collected by the EU, focusing on attitudes, awareness, and opinions regarding AI.
+This repository contains an analytical exploration of public perceptions about Artificial Intelligence (AI) applied in job using the **AI questions dataset** from the [European Union Open Data Portal](https://data.europa.eu/data/datasets/s3222_101_4_sp554_eng?locale=en). The dataset consists of survey responses collected by the EU, focusing on attitudes, awareness, and opinions regarding AI.
 
 ## Project Overview
 
@@ -22,14 +22,17 @@ The EU's prior work with this dataset has been limited to descriptive statistics
 ## Methodology
 
 1. **Data Cleaning & Preparation:**  
-   Handling missing values, encoding categorical variables, and preparing the dataset for analysis.
+   Handling missing values by using KNNImputer and created a new organized dataset for analysis.
 
-2. **Descriptive Statistics:**  
-   Basic summary and visualization of the dataset (as performed by the EU).
-
-3. **Inferential Statistics:**  
-   - **OLS Regression:** To model how demographic and attitudinal variables predict perceptions about AI.
-   - **ANOVA:** To assess whether perceptions about AI differ significantly across groups (e.g., age, education level, country).
+2. **Inferential Statistics:**  
+   - **OLS Regression:** To model how the education level of a country predict perceptions about AI.
+   - **ANOVA:** To assess whether perceptions about AI differ significantly across education levels.
+   - **OLS vs ANOVA**
+     - ANOVA checks if average opinions about AI differ between countries with different education levels.
+     - OLS regression goes further. It tells us how much each education level (like Master's or Doctorate) affects those opinions.
+     
+We work with country-level data, not individuals. Both the AI perception and education values are proportions (e.g., 0.65 = 65% of people asked from that country).
+These methods help us find meaningful patterns, not just describe the data.
 
 ## Usage
 
@@ -50,19 +53,13 @@ The EU's prior work with this dataset has been limited to descriptive statistics
 - statsmodels
 - matplotlib / seaborn (for visualization)
 
-Install requirements using:
-```bash
-pip install -r requirements.txt
-```
-
 ## Results
 
 The project will provide:
 
-- Summary statistics and visualizations of the dataset
 - OLS regression models identifying significant predictors of AI perceptions
 - ANOVA results comparing group differences
-- Interpretation of findings in the context of public policy and AI adoption
+- Interpretation of findings in the context of public policy and AI adoption in job
 
 ## License
 
