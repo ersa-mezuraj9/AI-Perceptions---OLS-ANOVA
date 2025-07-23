@@ -12,7 +12,7 @@ from statsmodels.formula.api import ols
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_excel("C:/Users/User/OneDrive/Desktop/Project AI/data/education_data.xlsx")
+df = pd.read_excel("C:/Users/User/OneDrive/Desktop/AI Project/AI-Perceptions---OLS-ANOVA/data/education_data.xlsx")
 
 edu_cols = ["Bachelor or equivalent", "Master or equivalent", "Doctoral or equivalent"]
 df_questions = df.drop(columns=edu_cols)

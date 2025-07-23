@@ -1,17 +1,18 @@
 """
-# Regression
+# OLS #
 Null Hypothesis (H₀):
 All regression coefficients for educational predictors are zero.
 Alternative Hypothesis (H₁):
 At least one of the coefficients is different from zero.
 
-# ANOVA table 
+# ANOVA table # 
 Null Hypothesis (H₀):
 The coefficient for that predictor is zero.
 Alternative Hypothesis (H₁):
 The coefficient is not zero.
 """
 
+# Models that did not pass the assumptions are analyzed in separate code files.
 
 from scipy.stats import shapiro
 import pandas as pd
@@ -91,6 +92,8 @@ for dep in dep_vars:
         plt.savefig(f"education/plots/boxplot_resid_{dep.replace('/', '_')}.png")
         plt.close()
 
+        # Since the sample size is to small, it's allowed to remove only two outliers. 
+        # Otherwise, it skips this model and move to the next dependent variable.
         if outliers.sum() < 3:
             cleaned_df = df.loc[~outliers]
             model_clean = ols(formula, data=cleaned_df).fit()
