@@ -27,6 +27,12 @@ The EU's prior work with this dataset has been limited to descriptive statistics
 2. **Inferential Statistics:**  
    - **OLS Regression:** To model how the education level of a country predict perceptions about AI.
    - **ANOVA:** To assess whether perceptions about AI differ significantly across education levels.
+   - **OLS vs ANOVA**
+     - ANOVA checks if average opinions about AI differ between countries with different education levels.
+     - OLS regression goes further. It tells us how much each education level (like Master's or Doctorate) affects those opinions.
+     
+We work with country-level data, not individuals. Both the AI perception and education values are proportions (e.g., 0.65 = 65% of people asked from that country).
+These methods help us find meaningful patterns, not just describe the data.
 
 ## Usage
 
