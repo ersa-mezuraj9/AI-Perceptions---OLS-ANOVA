@@ -58,8 +58,9 @@ These methods help us find meaningful patterns, not just describe the data.
 The project will provide:
 
 - OLS regression models identifying significant predictors of AI perceptions
-- ANOVA results comparing group differences
 - Interpretation of findings in the context of public policy and AI adoption in job
+
+For detailed statistics and regression outputs, see [`results_summary.md`](results_summary.md)
 
 ## License
 
