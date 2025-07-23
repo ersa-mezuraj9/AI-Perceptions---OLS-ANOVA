@@ -197,6 +197,26 @@ Master-level education correlates with more trust in AI’s decision-making. How
 
 ---
 
+## QB6_9 – AI Will Create More Jobs Than It Destroys
+
+**Survey Question:**  
+“To what extent do you agree that AI will create more jobs than it will eliminate?”
+
+**ANOVA:**  
+Model is not significant overall (p = 0.0771), but one predictor is significant.
+
+**Significant Predictor:**  
+Squared term of Doctoral education level (p = 0.033)
+
+**Not Significant:**  
+Bachelor (p = 0.391), Master (p = 0.914), Doctoral (p = 0.382)  
+Bachelor² (p = 0.870), Master² (p = 0.614)
+
+**Interpretation:**  
+There is a significant non-linear (quadratic) relationship between the proportion of Doctoral-level graduates and agreement that AI will create more jobs than it destroys. This suggests the effect may increase or decrease at higher levels of Doctoral education. However, the overall model does not strongly explain the variation in responses.
+
+---
+
 ## QB11_3 – Limiting Automated Monitoring of People
 
 **Survey Question:**  
@@ -405,4 +425,27 @@ Master (p = 0.398)
 **Interpretation:**  
 Higher levels of Doctoral education are associated with more negative views toward AI used for worker termination decisions.
 
+---
 
+## QB6_7 – AI as a Support for Workers
+
+**Survey Question:**  
+“To what extent do you agree that AI will help workers rather than replace them?”
+
+**ANOVA:**  
+Model is not significant (p = 0.483).
+
+**OLS Result:**  
+No education level is a significant predictor.
+
+**Not Significant:**  
+Bachelor (p = 0.549), Master (p = 0.461), Doctoral (p = 0.400)
+
+**Model Diagnostics:**  
+- Residuals are normally distributed (Shapiro-Wilk p = 0.6019).  
+- No evidence of nonlinearity (Ramsey RESET p = 0.5717).  
+- Heteroskedasticity detected (Breusch-Pagan p = 0.0292), so robust standard errors (HC1) were used.
+
+**Interpretation:**  
+Perceptions that AI will support rather than replace workers do not appear to vary significantly by education level across countries. The model has low explanatory power and shows no significant associations.
+ 
