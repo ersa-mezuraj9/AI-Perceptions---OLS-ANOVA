@@ -1,4 +1,4 @@
-### Multicollinearity Assessment
+## Multicollinearity Assessment
 
 Variance Inflation Factors (VIF) were calculated to check for multicollinearity among the education predictors:
 
@@ -10,7 +10,7 @@ Variance Inflation Factors (VIF) were calculated to check for multicollinearity 
 
 All VIF values are below 10, indicating that multicollinearity is present but not at a problematic level. While the Master’s and Doctoral education predictors show moderate correlation, they do not affect variance estimates, allowing reliable interpretation of regression coefficients.
 
-### One-Way ANOVA Across Questions
+## One-Way ANOVA Across Questions
 
 **Hypotheses:**
 
@@ -152,10 +152,10 @@ There is no strong evidence that education level predicts agreement that AI stea
 
 ---
 
-## QB6_6 – Agreement that More Jobs Will Disappear than be Created due to Robots and AI
+## QB6_6 – Agreement that AI Increases The Pace of Working
 
 **Survey Question:**  
-“To what extent do you agree that due to robots and Artificial Intelligence, more jobs will disappear than new jobs will be created?”
+“To what extent do you agree that robots and Artificial Intelligence increase the pace at which workers complete tasks?”
 
 **Model Diagnostics:**  
 - Residuals were initially not normally distributed; after removing 2 outliers, residuals became normal (Shapiro-Wilk p = 0.6821).  
@@ -173,7 +173,31 @@ Model is highly significant (F p < 0.0001).
 - Model explains ~91% of variance (R² = 0.907).
 
 **Interpretation:**  
-Nonlinear relationships and interactions between education levels strongly influence agreement with the statement about job disappearance due to AI and robots.
+Nonlinear relationships and interactions between education levels strongly influence agreement with the statement about increased efficiency due to AI and robots.
+
+---
+
+## QB6_7 – AI and Colleagues
+
+**Survey Question:**  
+“To what extent do you agree that AI have a negative impact on communication between colleagues?”
+
+**ANOVA:**  
+Model is not significant (p = 0.483).
+
+**OLS Result:**  
+No education level is a significant predictor.
+
+**Not Significant:**  
+Bachelor (p = 0.549), Master (p = 0.461), Doctoral (p = 0.400)
+
+**Model Diagnostics:**  
+- Residuals are normally distributed (Shapiro-Wilk p = 0.6019).  
+- No evidence of nonlinearity (Ramsey RESET p = 0.5717).  
+- Heteroskedasticity detected (Breusch-Pagan p = 0.0292), so robust standard errors (HC1) were used.
+
+**Interpretation:**  
+Agreement that AI have a negative impact on communication between colleagues do not appear to vary significantly by education level across countries. The model has low explanatory power and shows no significant associations.
 
 ---
 
@@ -197,30 +221,57 @@ Master-level education correlates with more trust in AI’s decision-making. How
 
 ---
 
-## QB6_9 – AI Will Create More Jobs Than It Destroys
+## QB11_1 – Protecting Workers’ Privacy
 
 **Survey Question:**  
-“To what extent do you agree that AI will create more jobs than it will eliminate?”
+“How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace?  
+→ Protecting workers' privacy”
 
 **ANOVA:**  
-Model is not significant overall (p = 0.0771), but one predictor is significant.
+Model is significant (p = 0.0344).
 
-**Significant Predictor:**  
-Squared term of Doctoral education level (p = 0.033)
+**OLS Result:**  
+No education level is a statistically significant predictor.  
 
 **Not Significant:**  
-Bachelor (p = 0.391), Master (p = 0.914), Doctoral (p = 0.382)  
-Bachelor² (p = 0.870), Master² (p = 0.614)
+Bachelor (p = 0.909), Master (p = 0.100), Doctoral (p = 0.199)
 
 **Interpretation:**  
-There is a significant non-linear (quadratic) relationship between the proportion of Doctoral-level graduates and agreement that AI will create more jobs than it destroys. This suggests the effect may increase or decrease at higher levels of Doctoral education. However, the overall model does not strongly explain the variation in responses.
+None of the individual education levels significantly predict support for rules protecting workers’ privacy. However, countries with more Master-level graduates may show a tendency toward viewing this rule as more important, though the result is not statistically conclusive.
+
+---
+
+## QB11_2 – Prohibiting Automated Decision-Making
+
+**Survey Question:**  
+“How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace?  
+→ Prohibiting automated decision-making”
+
+**ANOVA:**  
+Model is not significant (p = 0.0771).
+
+**OLS Result:**  
+A significant quadratic effect was found for the Doctoral education level (p = 0.033), indicating a non-linear relationship.
+
+**Not Significant:**  
+Bachelor (p = 0.391), Master (p = 0.914), Doctoral (linear p = 0.382)  
+Quadratic terms for Bachelor and Master were also not significant.
+
+**Model Diagnostics:**  
+- Residuals are normally distributed (Shapiro-Wilk p = 0.5443).  
+- No evidence of nonlinearity (Ramsey RESET p = 0.9083) after using polynomial regression.  
+- Heteroskedasticity not detected (Breusch-Pagan p = 0.3695).
+
+**Interpretation:**  
+While the overall model is not statistically significant, the squared term for Doctoral education suggests a curved relationship—potentially indicating that both low and high proportions of Doctoral graduates are associated with stronger views on prohibiting automated decision-making, while moderate levels show less concern.
 
 ---
 
 ## QB11_3 – Limiting Automated Monitoring of People
 
 **Survey Question:**  
-“To what extent is it important to limit automated monitoring of people in the workplace?”
+“How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace?
+→ Automated monitoring of people in the workplace?”
 
 **ANOVA:**  
 Model is significant (p = 0.0244).
@@ -236,10 +287,37 @@ Although the overall model is significant, none of the education levels individu
 
 ---
 
+## QB11_4 – Handling HR Decision-Making
+
+**Survey Question:**  
+“How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace?
+→ Enforcing more transparency in the use of digital technologies to handle HR decision-making”
+
+**ANOVA:**  
+Model is not significant (p = 0.0597).
+
+**Not Significant:**  
+Bachelor (p = 0.690), Master (p = 0.527), Doctoral (p = 0.525)  
+Bachelor² (p = 0.923), Master² (p = 0.627), Doctoral² (p = 0.083)
+
+**Model Diagnostics:**  
+- Residuals are normally distributed (Shapiro-Wilk p = 0.7633).  
+- No evidence of nonlinearity (Ramsey RESET p = 0.6988) after using polynomial regression.  
+- Heteroskedasticity not detected (Breusch-Pagan p = 0.7569).
+
+**Interpretation:**  
+No education level, neither linear nor quadratic terms, significantly predicts agreement that it is important enforcing more transparency in the use of digital technologies. The closest to significance is the squared Doctoral term, suggesting a possible weak non-linear trend. However, the model as a whole does not explain much variance in responses.
+
+**Limitations:**  
+The model suffers from a small sample size, reducing statistical power. Additionally, education alone may not fully explain country-level attitudes. Including factors like age, GDP ETC., could improve predictive strength.
+
+---
+
 ## QB11_5 – Involving Workers in Technology Design
 
 **Survey Question:**  
-“To what extent is it important to involve workers and their representatives in the design and adoption of new technologies?”
+“How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace? 
+→ Involve workers and their representatives in the design and adoption of new technologies?”
 
 **ANOVA:**  
 Model is significant (p = 0.0118).
@@ -425,27 +503,4 @@ Master (p = 0.398)
 **Interpretation:**  
 Higher levels of Doctoral education are associated with more negative views toward AI used for worker termination decisions.
 
----
-
-## QB6_7 – AI as a Support for Workers
-
-**Survey Question:**  
-“To what extent do you agree that AI will help workers rather than replace them?”
-
-**ANOVA:**  
-Model is not significant (p = 0.483).
-
-**OLS Result:**  
-No education level is a significant predictor.
-
-**Not Significant:**  
-Bachelor (p = 0.549), Master (p = 0.461), Doctoral (p = 0.400)
-
-**Model Diagnostics:**  
-- Residuals are normally distributed (Shapiro-Wilk p = 0.6019).  
-- No evidence of nonlinearity (Ramsey RESET p = 0.5717).  
-- Heteroskedasticity detected (Breusch-Pagan p = 0.0292), so robust standard errors (HC1) were used.
-
-**Interpretation:**  
-Perceptions that AI will support rather than replace workers do not appear to vary significantly by education level across countries. The model has low explanatory power and shows no significant associations.
  
