@@ -60,7 +60,8 @@ The project will provide:
 - Interpretation of findings in the context of public policy and AI adoption in job
 
 For detailed statistics and regression outputs, see [`results_summary.md`](results_summary.md)
-For correlation and standard deviation analysis, see [`correlation_std_analysis.md`](correlation_std_analysis.md)
+
+For descriptive statistics, correlation and standard deviation analysis, see [`correlation_std_descriptive.md`](correlation_std_descriptive.md)
 
 ## License
 
