@@ -1,3 +1,10 @@
+# Education Level and Perceptions of AI
+
+## Summary Conclusion
+
+Overall, the results show that education level plays a significant role in shaping how populations perceive Artificial Intelligence (AI). In general, countries with higher proportions of people holding Master’s or Doctoral degrees tend to have more positive views about the impact and use of AI in the workplace and society. While Master’s education is often linked with more optimistic attitudes toward AI, Doctoral education sometimes predicts greater caution or skepticism, especially regarding decision-making and job security. Bachelor’s education tends to have weaker or less consistent effects. These findings highlight that education shapes the way populations understand and respond to AI technologies.
+
+---
 ## Multicollinearity Assessment
 
 Variance Inflation Factors (VIF) were calculated to check for multicollinearity among the education predictors:
@@ -30,9 +37,9 @@ All VIF values are below 10, indicating that multicollinearity is present but no
 There is strong statistical evidence that at least one question has a significantly different mean level of agreement compared to the others.
 
 
-### OLS & ANOVA Results
+## OLS & ANOVA Results
 
-## QB1_4 – Perceived Impact of AI at Work
+### QB1_4 – Perceived Impact of AI at Work
 
 **Survey Question:**  
 “In your view, what impact do the most recent digital technologies, including Artificial Intelligence, currently have on your current job?”
@@ -51,7 +58,7 @@ In EU countries, a higher proportion of individuals with a Master’s degree is 
 
 ---
 
-## QB6_1 – Belief that More Jobs Will Disappear Than Be Created Due to AI and Robots
+### QB6_1 – Belief that More Jobs Will Disappear Than Be Created Due to AI and Robots
 
 **Survey Question:**  
 “Due to the use of robots and Artificial Intelligence, more jobs will disappear than new jobs will be created.”
@@ -73,7 +80,7 @@ Countries with higher proportions of Doctoral degree holders tend to disagree mo
 
 ---
 
-## QB6_2 – AI as a Good Thing for Society
+### QB6_2 – AI as a Good Thing for Society
 
 **Survey Question:**  
 “Robots and Artificial Intelligence are a good thing for society because they help people do their jobs or carry out daily tasks at home.”
@@ -92,7 +99,7 @@ Countries with more Master’s graduates are more likely to perceive AI as benef
 
 ---
 
-## QB6_3 – AI Needs Careful Management
+### QB6_3 – AI Needs Careful Management
 
 **Survey Question:**  
 “Robots and Artificial Intelligence are technologies that require careful management.”
@@ -112,7 +119,7 @@ Both Bachelor- and Master-educated populations are more likely to agree that AI 
 
 ---
 
-## QB6_4 – AI Replacing Boring or Repetitive Work
+### QB6_4 – AI Replacing Boring or Repetitive Work
 
 **Survey Question:**  
 “Artificial Intelligence is necessary as it can do jobs that are seen as boring or repetitive.”
@@ -131,7 +138,7 @@ Master-educated populations are more likely to view AI as a solution for automat
 
 ---
 
-## QB6_5 – Agreement that Robots and AI Steal People’s Jobs
+### QB6_5 – Agreement that Robots and AI Steal People’s Jobs
 
 **Survey Question:**  
 “To what extent do you agree that robots and Artificial Intelligence steal people’s jobs?”
@@ -152,7 +159,7 @@ There is no strong evidence that education level predicts agreement that AI stea
 
 ---
 
-## QB6_6 – Agreement that AI Increases The Pace of Working
+### QB6_6 – Agreement that AI Increases The Pace of Working
 
 **Survey Question:**  
 “To what extent do you agree that robots and Artificial Intelligence increase the pace at which workers complete tasks?”
@@ -177,7 +184,7 @@ Nonlinear relationships and interactions between education levels strongly influ
 
 ---
 
-## QB6_7 – AI and Colleagues
+### QB6_7 – AI and Colleagues
 
 **Survey Question:**  
 “To what extent do you agree that AI have a negative impact on communication between colleagues?”
@@ -201,7 +208,7 @@ Agreement that AI have a negative impact on communication between colleagues do 
 
 ---
 
-## QB6_8 – AI Makes Accurate Decisions
+### QB6_8 – AI Makes Accurate Decisions
 
 **Survey Question:**  
 “Robots and Artificial Intelligence can be used to make accurate decisions in the workplace.”
@@ -221,7 +228,7 @@ Master-level education correlates with more trust in AI’s decision-making. How
 
 ---
 
-## QB11_1 – Protecting Workers’ Privacy
+### QB11_1 – Protecting Workers’ Privacy
 
 **Survey Question:**  
 “How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace?  
@@ -241,7 +248,7 @@ None of the individual education levels significantly predict support for rules 
 
 ---
 
-## QB11_2 – Prohibiting Automated Decision-Making
+### QB11_2 – Prohibiting Automated Decision-Making
 
 **Survey Question:**  
 “How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace?  
@@ -267,7 +274,7 @@ While the overall model is not statistically significant, the squared term for D
 
 ---
 
-## QB11_3 – Limiting Automated Monitoring of People
+### QB11_3 – Limiting Automated Monitoring of People
 
 **Survey Question:**  
 “How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace?
@@ -287,7 +294,7 @@ Although the overall model is significant, none of the education levels individu
 
 ---
 
-## QB11_4 – Handling HR Decision-Making
+### QB11_4 – Handling HR Decision-Making
 
 **Survey Question:**  
 “How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace?
@@ -313,7 +320,7 @@ The model suffers from a small sample size, reducing statistical power. Addition
 
 ---
 
-## QB11_5 – Involving Workers in Technology Design
+### QB11_5 – Involving Workers in Technology Design
 
 **Survey Question:**  
 “How important, if at all, do you think the following rule would be in addressing risks and maximizing the benefits of digital technologies, including AI, in the workplace? 
@@ -333,7 +340,7 @@ While the model is statistically significant, no individual education level sign
 
 ---
 
-## QB8_1 – AI for Gathering Information on Applicants
+### QB8_1 – AI for Gathering Information on Applicants
 
 **Survey Question:**  
 “To what extent do you view the use of AI to gather additional information on applicants for a job positively?”
@@ -355,7 +362,7 @@ The model suffers from a small sample size, reducing statistical power. Addition
 
 ---
 
-## QB8_2 – AI for Selecting Applicants
+### QB8_2 – AI for Selecting Applicants
 
 **Survey Question:**  
 “To what extent do you view the use of AI for selecting applicants for a job positively?”
@@ -377,7 +384,7 @@ The model suffers from a small sample size, reducing statistical power. Addition
 
 ---
 
-## QB8_3 – AI for Allocating Tasks or Managing Schedules
+### QB8_3 – AI for Allocating Tasks or Managing Schedules
 
 **Survey Question:**  
 “To what extent do you view the use of AI for allocating tasks or managing work schedules positively?”
@@ -399,7 +406,7 @@ The model suffers from a small sample size, reducing statistical power. Addition
 
 ---
 
-## QB8_4 – AI for Processing Personal Worker Data
+### QB8_4 – AI for Processing Personal Worker Data
 
 **Survey Question:**  
 “To what extent do you view the use of AI to collect, process, and store workers’ personal data positively?”
@@ -421,7 +428,7 @@ The model suffers from a small sample size, reducing statistical power. Addition
 
 ---
 
-## QB8_5 – AI for Improving Worker Safety and Security
+### QB8_5 – AI for Improving Worker Safety and Security
 
 **Survey Question:**  
 “To what extent do you view the use of AI to improve workers’ safety and security positively?”
@@ -440,7 +447,7 @@ Countries with more Master-educated individuals are more supportive of AI in enh
 
 ---
 
-## QB8_6 – AI for Monitoring Workers
+### QB8_6 – AI for Monitoring Workers
 
 **Survey Question:**  
 “To what extent do you view the use of AI to monitor workers positively?”
@@ -463,7 +470,7 @@ The model suffers from a small sample size, reducing statistical power. Addition
 
 ---
 
-## QB8_7 – AI for Assessing Worker Performance
+### QB8_7 – AI for Assessing Worker Performance
 
 **Survey Question:**  
 “To what extent do you view the use of AI to assess workers’ performance positively?”
@@ -485,7 +492,7 @@ The model suffers from a small sample size, reducing statistical power. Addition
 
 ---
 
-## QB8_8 – AI for Automatically Firing Workers
+### QB8_8 – AI for Automatically Firing Workers
 
 **Survey Question:**  
 “To what extent do you view the use of AI to automatically fire workers positively?”
@@ -502,5 +509,3 @@ Master (p = 0.398)
 
 **Interpretation:**  
 Higher levels of Doctoral education are associated with more negative views toward AI used for worker termination decisions.
-
- 
